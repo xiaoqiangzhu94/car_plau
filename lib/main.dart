@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'base/load/splashPage.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -27,10 +29,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    //  routes: {
-    //     '/MainPage': (ctx) => MyHomePage(),
-    //   },
-      home: new MyHomePage(title: 'ddd',),
+     routes: {
+        '/MainPage': (ctx) => MyHomePage(title:'ss'),
+      },
+      home: new SplashPage(),
     );
   }
 
